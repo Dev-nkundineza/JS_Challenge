@@ -1,17 +1,21 @@
 function testPalindrome(testInput) {
-    var remSpecChar = testInput.replace(/[^A-Z0-9]/gi, "").toLowerCase();
-    // function to remove special characters and empty spaces and convert to lower case string
+    let inputToLower = testInput.toLowerCase(); // change the input to lowerCase
+    let resultPalindrome = inputToLower.split('');
+    let resString = "";
 
-    var resultPalindrome = remSpecChar.split('').reverse().join('');
-
-    if (remSpecChar === resultPalindrome) {
-        return true;
-    } else {
-        return false;
+    for (let i = resultPalindrome.length - 1; i >= 0; i--) {
+        resString += resultPalindrome[i];
+        if (inputToLower === resString) {
+            return true;
+        }
     }
+
+    return false;
+
 
 }
 
-console.log(testPalindrome("Madam"));
+console.log(testPalindrome("#madam# #madam#"));
 console.log(testPalindrome("'1,7,1'"));
 console.log(testPalindrome("Execute"));
+console.log(testPalindrome("level"));
