@@ -3,13 +3,13 @@ const myFunction = (arr) => {
     let obj = {};
     arr.forEach((item) => {
         const newArray = item.split(",");
-        const FirstElement = newArray[0].split(" ");
+        const firstElement = newArray[0].split(" ");
 
 
-        if (!obj[FirstElement[0]]) {
-            obj[FirstElement[0]] = {
+        if (!obj[firstElement[0]]) {
+            obj[firstElement[0]] = {
 
-                second_name: FirstElement[1],
+                second_name: firstElement[1],
                 age: newArray[1]
             };
         }
