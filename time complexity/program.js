@@ -1,3 +1,5 @@
+'use strict';
+
 function countOccurence(arr) {
     let myObj = {}
 
@@ -7,9 +9,6 @@ function countOccurence(arr) {
         } else {
             myObj[arr[i]] = 1;
         }
-
-
-
     }
     let y = Object.values(myObj);
     for (let val = 0; val < y.length; val++) {

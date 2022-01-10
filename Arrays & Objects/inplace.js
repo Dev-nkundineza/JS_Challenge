@@ -1,3 +1,5 @@
+'use strict';
+
 function inplaceArray(arr) {
     let i = 0;
     let j = arr.length - 1;

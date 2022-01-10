@@ -1,3 +1,5 @@
+'use strict';
+
 function sortArray(arr) {
     let temp;
 

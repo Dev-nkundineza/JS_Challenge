@@ -1,3 +1,5 @@
+'use strict';
+
 function checkPrime(arr1) {
     var resArray = [];
 

@@ -1,3 +1,5 @@
+'use strict';
+
 function testPalindrome(testInput) {
     let inputToLower = testInput.toLowerCase(); // change the input to lowerCase
     let resultPalindrome = inputToLower.split('');
@@ -11,8 +13,6 @@ function testPalindrome(testInput) {
     }
 
     return false;
-
-
 }
 
 console.log(testPalindrome("#madam# #madam#"));

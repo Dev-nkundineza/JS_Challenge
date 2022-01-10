@@ -1,3 +1,5 @@
+'use strict';
+
 function revFunction(arr) {
 
     let resArray = [];
